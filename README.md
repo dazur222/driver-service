@@ -4,7 +4,7 @@ Guarda perfiles, credenciales, certificaciones y la asignación actual de cada c
 
 ## Preparar la base
 
-Crea una base PostgreSQL llamada `driver_db`. La configuración predeterminada usa `localhost:5432`, el usuario `postgres` y la contraseña `root`. Puedes cambiarla con `DRIVER_DB_URL`, `DRIVER_DB_USER` y `DRIVER_DB_PASSWORD`. Hibernate crea y actualiza las tablas al iniciar.
+Crea una base PostgreSQL llamada `driver_db`. La configuración predeterminada usa `localhost:5432`, el usuario `postgres` y la contraseña `root`. Puedes cambiarla con `DRIVER_DB_URL`, `DRIVER_DB_USER` y `DRIVER_DB_PASSWORD`. Flyway crea el esquema al iniciar con las migraciones de `src/main/resources/db/migration`.
 
 ## Iniciar el servicio
 
